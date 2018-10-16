@@ -262,6 +262,7 @@ public void print(int[] nums){
 		System.out.print(num+" ");
 }
 
+//随机生成1到range范围内的count个数字
 public int[] randomNum(int count,int range){
 	int[] num=new int[count];
 	for(int i=0;i<count;i++)
