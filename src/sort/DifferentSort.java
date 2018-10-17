@@ -272,6 +272,7 @@ public int[] randomNum(int count,int range){
 
 public static void main(String[] args){
 	//int[] originNums={1,3,5,7,9,2,4,6,8,0,5,6,13,2,45,31};
+	
 	DifferentSort dSort=new DifferentSort();
 	int[] originNums=dSort.randomNum(20,30);
 	
