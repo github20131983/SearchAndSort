@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 public class SortUtil {
 	//交换数组中的两个数

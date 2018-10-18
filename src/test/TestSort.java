@@ -5,7 +5,6 @@ import java.util.Arrays;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import Util.SortUtil;
 import sort.BubbleSort;
 import sort.BucketSort;
 import sort.CountSort;
@@ -16,6 +15,7 @@ import sort.QuickSort;
 import sort.RadixSort;
 import sort.SelectSort;
 import sort.ShellSort;
+import util.SortUtil;
 
 public class TestSort {
 	SortUtil su=new SortUtil();

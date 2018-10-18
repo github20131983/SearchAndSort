@@ -1,6 +1,6 @@
 package sort;
 
-import Util.SortUtil;
+import util.SortUtil;
 
 public class HeapSort {
 	SortUtil su=new SortUtil();
