@@ -13,11 +13,21 @@ public class SortUtil {
 		for(int num:nums)
 			System.out.print(num+" ");
 	}
+	
+	//数组打印，10个一行
+	public void print10(int[] nums){
+		for(int i=0;i<nums.length;i++){
+			System.out.print(nums[i]+" ");
+			if((i+1)%10==0)
+				System.out.println();
+		}
+	}
 
 	//随机生成1到range范围内的count个数字
 	public int[] randomNum(int count,int range){
 		int[] num=new int[count];
-		for(int i=0;i<count;i++)
+		num[0]=1;num[1]=range;
+		for(int i=2;i<count;i++)
 			num[i]=(int)(Math.random()*range+1);
 		return num;
 	}
