@@ -23,7 +23,7 @@ public class SortUtil {
 		}
 	}
 
-	//随机生成1到range范围内的count个数字
+	//随机生成1到range范围内的count个数字，并且至少生成一个range，一个1
 	public int[] randomNum(int count,int range){
 		int[] num=new int[count];
 		num[0]=1;num[1]=range;
