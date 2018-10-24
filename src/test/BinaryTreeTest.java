@@ -3,8 +3,11 @@ package test;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import binaryTree.ConstructBinaryTreeFromInorderAndPostorderTraversal;
+import binaryTree.ConstructBinaryTreeFromPreorderAndInorderTraversal;
 import binaryTree.InorderTraversal;
 import binaryTree.LevelOrderTraversal;
+import binaryTree.PrintTreeByLevelOrderTraversal;
 import binaryTree.TreeNode;
 
 public class BinaryTreeTest { 
@@ -21,7 +24,7 @@ public class BinaryTreeTest {
 		System.out.print(it.inorderTraversal1(tr1[0]));
 	}
 	
-	@Test
+	@Ignore
 	public void testLevelOrderTraversal(){
 		TreeNode[] tr1=new TreeNode[5];
 		tr1[0]=new TreeNode(1);
@@ -35,5 +38,27 @@ public class BinaryTreeTest {
 		tr1[2].setRight(tr1[4]);
 		LevelOrderTraversal lot=new LevelOrderTraversal();
 		System.out.print(lot.levelOrder(tr1[0]));
+	}
+
+	@Ignore
+	public void testConstructBinaryTreeFromInorderAndPostorderTraversal(){
+		int[] post={9,15,7,20,3};
+		int[] in={9,3,15,20,7};
+		ConstructBinaryTreeFromInorderAndPostorderTraversal cbtfiapt=
+				new ConstructBinaryTreeFromInorderAndPostorderTraversal();
+		TreeNode root=cbtfiapt.buildTree(in,post);
+		PrintTreeByLevelOrderTraversal p=new PrintTreeByLevelOrderTraversal();
+		p.printTree(root);
+	}
+	
+	@Ignore
+	public void testConstructBinaryTreeFromInorderAndPretorderTraversal(){
+		int[] pre={3,9,20,15,7};
+		int[] in={9,3,15,20,7};
+		ConstructBinaryTreeFromPreorderAndInorderTraversal cbtfpait=
+				new ConstructBinaryTreeFromPreorderAndInorderTraversal();
+		TreeNode root=cbtfpait.buildTree(pre, in);
+		PrintTreeByLevelOrderTraversal p=new PrintTreeByLevelOrderTraversal();
+		p.printTree(root);
 	}
 }
