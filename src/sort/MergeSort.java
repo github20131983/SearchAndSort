@@ -35,7 +35,7 @@ public class MergeSort {
 	}
 
 	public int[] mergeSort(int nums[]){
-		int []temp = new int[nums.length];
+		int[] temp = new int[nums.length];
 	    mergeSort(nums,0,nums.length-1,temp);
 	    return  nums;
 	}

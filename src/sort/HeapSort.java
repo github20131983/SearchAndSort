@@ -10,10 +10,10 @@ public class HeapSort {
 		for(int k=2*i+1;k<length;k=k*2+1){
 			if(k+1<length&&nums[k]<nums[k+1])
 				k++;
-			if(nums[k]>temp){
+			if(nums[k]>nums[i]){
 				nums[i]=nums[k];
 				i=k;
-			}else {
+				}else {
 				break;
 			}
 		}

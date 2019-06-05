@@ -79,7 +79,7 @@ public class TestSort {
 		System.out.println("（快速排序）");
 	}
 	
-	@Ignore
+	@Test
 	public void heapSortTest() {
 		HeapSort hs=new HeapSort();
 		su.print(originNums);
@@ -108,7 +108,7 @@ public class TestSort {
 		System.out.println("（计数排序）");
 	}
 	
-	@Test
+	@Ignore
 	public void radixSortTest() {
 		RadixSort rs=new RadixSort();
 		su.print(originNums);

@@ -99,7 +99,7 @@ public class ArithmeticOperations {
 	}
 	
 	public static void main(String[] args){
-		String str="1+2-3*(4+10)/5";
+		String str="9+(3-1)*3+10/2";
 		ArithmeticOperations ao=new ArithmeticOperations();
 		System.out.print(ao.calculate(ao.convertFromInfixToSuffix(str)));
 	}
