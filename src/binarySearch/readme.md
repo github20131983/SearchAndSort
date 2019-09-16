@@ -1,0 +1,5 @@
+BinarySearch1标准二分，重复元素随机返回
+BinarySearch2寻找元素第一次出现的位置
+BinarySearch3寻找元素最后一次出现的位置
+BinarySearch4寻找第一个大于目标元素的位置
+BinarySearch5寻找第一个小于目标元素的位置
